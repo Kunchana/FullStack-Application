@@ -1,0 +1,86 @@
+/* General Styles */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #e6f4bf;
+    
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #63b10a;
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #ecf0f2;
+  }
+  
+  /* Company Description Section */
+  .company-description {
+    margin: 20px 0;
+  }
+  
+  .company-description h2 {
+    font-size: 2rem;
+    color: #a6eb26;
+    margin-bottom: 10px;
+  }
+  
+  .company-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1f5f5;
+  }
+  
+ /* Vision and Mission Section */
+.vision-mission-section {
+    padding: 40px 20px;
+  }
+  
+  .vision-mission-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vision-mission-section .vision,
+  .vision-mission-section .mission {
+    flex: 1;
+    padding: 20px;
+    background-color: #afb8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vision-mission-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .vision-mission-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-mission-section .container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  
+  

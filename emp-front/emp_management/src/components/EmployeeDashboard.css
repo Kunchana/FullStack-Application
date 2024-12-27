@@ -1,0 +1,135 @@
+/* General styling for the dashboard container */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for the table */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font for table */
+  table-layout: fixed; /* Ensures that columns have consistent width */
+}
+
+.employee-table th,
+.employee-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.employee-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.employee-table td {
+  color: #555;
+  word-wrap: break-word; /* Prevent long words from breaking out */
+}
+
+/* Column width adjustments */
+.employee-table th:nth-child(1),
+.employee-table td:nth-child(1) {
+  width: 15%; /* Employee number column */
+}
+
+.employee-table th:nth-child(2),
+.employee-table td:nth-child(2),
+.employee-table th:nth-child(3),
+.employee-table td:nth-child(3) {
+  width: 15%; /* First and last name columns */
+}
+
+.employee-table th:nth-child(4),
+.employee-table td:nth-child(4),
+.employee-table th:nth-child(5),
+.employee-table td:nth-child(5) {
+  width: 20%; /* Phone and Address columns */
+}
+
+.employee-table th:nth-child(6),
+.employee-table td:nth-child(6) {
+  width: 10%; /* Age column */
+}
+
+.employee-table th:nth-child(7),
+.employee-table td:nth-child(7) {
+  width: 20%; /* Email column */
+}
+
+.employee-table th:nth-child(8),
+.employee-table td:nth-child(8) {
+  width: 15%; /* Salary column */
+}
+
+.employee-table th:nth-child(9),
+.employee-table td:nth-child(9) {
+  width: 20%; /* Position column */
+}
+
+.employee-table th:nth-child(10),
+.employee-table td:nth-child(10) {
+  width: 15%; /* Start Date column */
+}
+
+.employee-table th:nth-child(11),
+.employee-table td:nth-child(11) {
+  width: 25%; /* Department column */
+}
+
+.employee-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Add alternating row colors for readability */
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Empty state message */
+.employee-table tr.no-data td {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Adjusting for responsiveness */
+@media (max-width: 768px) {
+  .employee-table th,
+  .employee-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
