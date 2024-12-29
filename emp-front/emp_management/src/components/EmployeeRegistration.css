@@ -1,0 +1,76 @@
+.form-container {
+    margin: 80px auto; /* Adds space from the navbar */
+    padding: 20px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #eafab7;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    color:#000000;
+  }
+  
+  .registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .registration-form input,
+  .registration-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .registration-form textarea {
+    height: 80px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #003366;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #bbb;
+  }
+  

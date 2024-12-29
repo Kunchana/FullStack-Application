@@ -1,0 +1,247 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #042647; /* Dark Blue */
+  color: #ffffff; /* White Text */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #004080; /* Slightly lighter dark blue */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  overflow-x: auto; /* Enable horizontal scrolling for extra items */
+  z-index: 1; /* Ensure navbar is on top */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Navbar List */
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Space between items */
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Navbar List Items */
+.navbar-list li {
+  color: #ffffff; /* White text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect for List Items */
+.navbar-list li:hover {
+  color: #66ccff; /* Light Blue on Hover */
+}
+
+/* Link Styling */
+.nav-link {
+  text-decoration: none;
+  color: white; /* White text for links */
+  font-weight: bold;
+  display: inline-block; /* Ensures proper alignment */
+  padding: 5px 10px; /* Adds clickable area */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+  color: #66ccff; /* Light Blue on Hover */
+  background-color: #00264d; /* Slightly darker background */
+}
+
+/* Ensure Scrollable Navigation on Small Screens */
+.navbar {
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #66ccff transparent; /* Custom scrollbar color */
+}
+
+.navbar::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height for horizontal scrolling */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: #66ccff; /* Scrollbar color */
+  border-radius: 4px; /* Rounded scrollbar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px;
+  }
+
+  .navbar-list {
+    flex-direction: column; /* List items in a column */
+    gap: 15px; /* Smaller gap between items */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 8px 12px; /* Adjust padding for better visibility */
+  }
+}
+
+/* Welcome Section */
+.welcome-section {
+   text-align: center;
+   margin: 80px 0 40px 0; 
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #66ccff; /* Light Blue */
+}
+.company {
+  width: 50px;  /* Adjust the logo size as needed */
+  height: auto;
+  margin-right: 20px;  /* Space between the logo and the company name */
+}
+
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+  padding-top: 70px;
+}
+
+/* Left Section - Description */
+.left-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.left-section h2 {
+  font-size: 2.5rem;
+  color: #99ccff; /* Softer Blue */
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  color: #dddddd; /* Light Gray */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Right Section - Image */
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo {
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 10px;
+}
+/* General Footer Styling */
+/* General Footer Styling */
+.footer {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space out sections horizontally */
+  align-items: flex-start; /* Align content to the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1; /* Equal width for sections */
+  min-width: 250px; /* Minimum width for smaller screens */
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f0a500; /* Highlight color for headings */
+}
+
+/* Contact Info Styling */
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Our Services Styling */
+.our-services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.our-services ul li {
+  margin: 5px 0;
+}
+
+.our-services ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.our-services ul li a:hover {
+  color: #f0a500; /* Highlight color on hover */
+}
+
+/* Social Links Styling */
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f0a500; /* Highlight color on hover */
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444; /* Subtle border for separation */
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

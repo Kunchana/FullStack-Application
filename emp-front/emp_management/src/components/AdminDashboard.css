@@ -1,0 +1,188 @@
+/* AdminDashboard.css */
+.form-container {
+  margin: 80px auto; /* Adds space from the navbar */
+  padding: 20px;
+  width: 600px; /* Increased width for better layout */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9fdf4;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #b52020;
+}
+
+h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #444;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  color: #444444;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button.search {
+  background-color: #1bda48;
+  color: white;
+}
+
+button.cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.search:hover {
+  background-color: #158f36;
+}
+
+button.cancel:hover {
+  background-color: #5a6268;
+}
+
+button.delete:hover {
+  background-color: #b02a37;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.admin-description {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-description p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.admin-description strong {
+  color: #0056b3;
+}
+
+.employee-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.employee-table th, .employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #ddd;
+}
+.employee-table td {
+  color: #333;
+}
+
+.employee-table th {
+  background-color: #e9ecef;
+  color: #333;
+  font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employee-table tr:hover {
+  background-color: #eaf3ff;
+}
+/* Button styles for Edit, Update, and Delete */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.update {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
