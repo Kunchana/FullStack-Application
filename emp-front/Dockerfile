@@ -2,7 +2,7 @@
 FROM node:18 AS build
 
 # Set the working directory
-WORKDIR /FullStack-Application/emp-front/emp_management
+WORKDIR /FullStack-Application/emp-front/.vscode
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
